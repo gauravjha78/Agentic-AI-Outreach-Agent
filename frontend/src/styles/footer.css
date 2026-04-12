@@ -1,0 +1,217 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&display=swap');
+    
+/* ─── Footer Shell ────────────────────────────────────── */
+.footer {
+  font-family: 'DM Sans', sans-serif;
+  background: #000;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  position: relative;
+  overflow: hidden;
+  
+  
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -100px;
+  width: 400px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(129, 74, 200, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  
+}
+
+/* ─── Top Grid ────────────────────────────────────────── */
+.footer-top {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 4rem 2.5rem 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 1.5rem 2rem;
+  }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Brand Block ─────────────────────────────────────── */
+.footer-brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.footer-brand-logo .logo-icon {
+  width: 32px;
+  height: 32px;
+  background: #814AC8;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-brand-logo .logo-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.footer-tagline {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  max-width: 260px;
+  margin-bottom: 1.75rem;
+}
+
+/* ─── Social Pills ────────────────────────────────────── */
+.footer-socials {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 100px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.social-pill:hover {
+  background: rgba(129, 74, 200, 0.15);
+  border-color: rgba(129, 74, 200, 0.35);
+  color: #c4a2f5;
+}
+
+/* ─── Column Headings ─────────────────────────────────── */
+.footer-col-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 1rem;
+}
+
+/* ─── Link Lists ──────────────────────────────────────── */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* ─── Divider ─────────────────────────────────────────── */
+.footer-divider {
+  max-width: 1120px;
+  margin: 0 auto;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* ─── Bottom Bar ──────────────────────────────────────── */
+.footer-bottom {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.25rem 1.5rem;
+  }
+}
+
+.footer-copy {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 0.8125rem;
+}
+
+.footer-copy strong {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}
+
+/* ─── Status Badge ────────────────────────────────────── */
+.footer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: rgba(129, 74, 200, 0.1);
+  border: 1px solid rgba(129, 74, 200, 0.2);
+  border-radius: 100px;
+  font-size: 11px;
+  color: rgba(180, 140, 240, 0.8);
+  font-weight: 500;
+}
+
+.footer-badge .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #814AC8;
+  animation: blink 2s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
