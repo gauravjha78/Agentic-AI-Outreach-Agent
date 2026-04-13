@@ -9,3 +9,4 @@ langgraph
 openai
 httpx
 email-validator
+langchain-openai
