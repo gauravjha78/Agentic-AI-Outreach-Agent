@@ -8,3 +8,4 @@ langchain
 langgraph
 openai
 httpx
+email-validator
