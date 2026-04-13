@@ -234,7 +234,7 @@ async def chat(request:ChatRequest):
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"], # this is frontend URL
+    allow_origins=["*"], # this is frontend URL "http://localhost:3000" so now "*" will allow all origin
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

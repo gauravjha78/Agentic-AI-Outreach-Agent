@@ -26,7 +26,8 @@ export default function Dashboard() {
 
   useEffect(() => {
     const fetchstatus = ()=>{
-    fetch("http://127.0.0.1:8000/stats")
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/stats`)
+    // fetch("http://127.0.0.1:8000/stats")
       .then((res) => res.json())
       .then((data) => setStats(data));
     };
