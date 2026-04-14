@@ -1,11 +1,13 @@
 # Seniding the email to the user
+from dotenv import load_dotenv
+import os
 import smtplib
 from email.mime.text import MIMEText
 
 
 def send_emails(to_email, subject , body):
-    sender_email="gaurav0592005@gmail.com"
-    sender_password="ompzzsdtmofttuvc"
+    sender_email=os.getenv("EMAIL_USER")
+    sender_password=os.getenv("EMAIL_PASS")
 
 # ✅ ensure everything is string
     subject = str(subject)
