@@ -23,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${space.variable}`}>
       <body>{children}
-        <ChatBot/>
         
         <Footer/>
+        <ChatBot/>
+        
+        
       </body>
     </html>
   );

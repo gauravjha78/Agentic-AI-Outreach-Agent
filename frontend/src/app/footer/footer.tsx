@@ -57,9 +57,9 @@ export default function Footer() {
 
       <div className="footer-divider" />
 
-      <div className="footer-bottom">
+      <div className="footer-bottom ">
         <p className="footer-copy">
-          © {new Date().getFullYear()} <strong>XTRACT</strong>. All rights reserved.
+          © {new Date().getFullYear()} <strong>XTRACT</strong>. All rights reserved. Created by Gaurav Jha
         </p>
         <div className="footer-badge">
           <span className="dot" />
